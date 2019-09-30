@@ -1,0 +1,8 @@
+<launch>
+    <arg name="device_name" />
+    <arg name="target_frame" />
+    <node pkg="ros_vive_driver" type="pose_republisher.py" name="$(anon name)" output="screen">
+        <param name="device_name" value="$(arg device_name)"/>
+        <param name="target_frame" value="$(arg target_frame)"/>
+    </node>
+</launch>

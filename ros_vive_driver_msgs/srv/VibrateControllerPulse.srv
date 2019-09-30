@@ -1,0 +1,7 @@
+string name
+float32 strength
+float32 pulse_duration
+uint32 pulse_count
+float32 pulse_period
+---
+bool success

@@ -1,0 +1,8 @@
+string controller_name
+float32 trigger
+bool menu_button
+bool grip_button
+float32 trackpad_x
+float32 trackpad_y
+bool trackpad_touched
+bool trackpad_pressed

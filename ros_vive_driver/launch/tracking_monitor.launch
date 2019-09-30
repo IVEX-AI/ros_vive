@@ -1,0 +1,6 @@
+<launch>
+    <arg name="device_name" />
+    <node pkg="ros_vive_driver" type="tracking_monitor.py" name="$(anon name)" output="screen">
+        <param name="device_name" value="$(arg device_name)"/>
+    </node>
+</launch>

@@ -1,0 +1,5 @@
+python-openvr:
+ ubuntu:
+  pip:
+    packages: [openvr]
+

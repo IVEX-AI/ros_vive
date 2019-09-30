@@ -1,0 +1,13 @@
+<launch>
+    <arg name="vive_frame" />
+    <arg name="target_frame" />
+    <arg name="tracker_name" />
+    <arg name="controller_name" default="controller_0"/>
+    <node pkg="ros_vive_driver" type="1_point_frame_calibration.py" name="vive_frame_calibration_node" output="screen">
+        <param name="vive_frame" value="$(arg vive_frame)"/>
+        <param name="target_frame" value="$(arg target_frame)"/>
+        <param name="tracker_name" value="$(arg tracker_name)"/>
+        <param name="use_controller" type="bool" value="true"/>
+        <param name="controller_name" type="string" value="$(arg controller_name)"/>
+    </node>
+</launch>

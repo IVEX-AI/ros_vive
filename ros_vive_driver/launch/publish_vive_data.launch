@@ -1,0 +1,7 @@
+<launch>
+    <arg name="vive_frame" />
+    <node pkg="ros_vive_driver" type="vive_device_publisher.py" name="vive_device_publisher_node"
+          output="screen">
+        <param name="vive_frame" value="$(arg vive_frame)"/>
+    </node>
+</launch>
